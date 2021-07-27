@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans:wght@600&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Electro.</title>
+  </head>
+  <body onload="countdown()">
+    <header>
+      <div class="header-top">
+        <div class="contact">
+          <div class="blocks">
+            <i class="fas fa-phone"></i>
+            <p>+34 999 99 99 99</p>
+          </div>
+          <div class="blocks">
+            <i class="far fa-envelope"></i>
+            <p>info@email.com</p>
+          </div>
+          <div class="blocks">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>38000 Santa Cruz de Tenerife</p>
+          </div>
+        </div>
+        <div class="options">
+          <div class="blocks">
+            <i class="fas fa-euro-sign"></i>
+            <p>Euros</p>
+          </div>
+          <div class="blocks">
+            <i class="fas fa-lock"></i>
+            <p>Mi Cuenta</p>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="logo">
+          <h1><a href="index.html">Electro<span>.</span></a></h1>
+        </div>
+        <div class="search">
+          <div class="search-var">
+            <select name="categorias" id="categorias">
+              <option value="">todas las categorías</option>
+              <option value="laptop">laptops</option>
+              <option value="smartphone">teléfonos inteligentes</option>
+              <option value="camera">cámaras</option>
+              <option value="accessories">accesorios</option>
+            </select>
+            <input type="search" name="search" id="search" placeholder="Busca aquí">
+          </div>
+          <button class="search-button">Buscar</button>
+        </div>
+        <div class="shopping">
+          <div class="shop">
+            <a href="#">
+              <i class="far fa-heart"></i>
+              <p>Tu lista de deseos</p>
+            </a>
+          </div>
+          <div class="shop">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <p>Tu carrito</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="web-pages">
+      <a href="index.html">Home</a>
+      <a href="#">Las mejores ofertas</a>
+      <a href="#">Categorías</a>
+      <a href="#">Laptops</a>
+      <a href="#">Teléfonos inteligentes</a>
+      <a href="#">Cámaras</a>
+      <a href="#">Accesorios</a>
+    </nav>
+    <div class="container">
+      <div class="collections">
+        <div class="collect" id="laptop">
+          <div>
+            <h1>Colección</h1>
+            <h1>Laptops</h1>
+            <a href="#">
+              <span>COMPRAR AHORA <i class="fas fa-arrow-circle-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="collect" id="accessories">
+          <div>
+            <h1>Colección</h1>
+            <h1>de Accesorios</h1>
+            <a href="#">
+              <span>COMPRAR AHORA <i class="fas fa-arrow-circle-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="collect" id="camera">
+          <div>
+            <h1>Colección</h1>
+            <h1>de Cámaras</h1>
+            <a href="#">
+              <span>COMPRAR AHORA <i class="fas fa-arrow-circle-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="new">
+        <div class="new-top">
+          <h1>NUEVOS PRODUCTOS</h1>
+          <nav class=" nav-new">
+            <a href="#">Laptops</a>
+            <a href="#">Teléfonos inteligentes</a>
+            <a href="#">Cámaras</a>
+            <a href="#">Accesorios</a>
+          </nav>
+        </div>
+        <div class="products">
+          <div class="products-item" id="products-item1">
+            <img src="src/img/products/1.webp" alt="p1" >
+            <div class="products-info">
+              <h3>Accesorios</h3>
+              <h1>Audífonos Gamer</h1>
+              <h2>€ 249,99 <span class="line-through">€ 300,00</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+          <div class="products-item" id="products-item2">
+            <img src="src/img/products/2.png" alt="p2" class="img-big">
+            <div class="products-info">
+              <h3>Accesorios</h3>
+              <h1>SILLA GAMER XIÓN</h1>
+              <h2>€ 604,00 <span class="line-through">€ 859,00</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+          <div class="products-item" id="products-item3">
+            <img src="src/img/products/3.png" alt="p3">
+            <div class="products-info">
+              <h3>TELÉFONOS inteligentes</h3>
+              <h1>ZenFone 7 Pro</h1>
+              <h2>€ 649,99 <span class="line-through">€ 799,99</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+          <div class="products-item" id="products-item4">
+            <img src="src/img/products/4.webp" alt="p4">
+            <div class="products-info">
+              <h3>Accesorios</h3>
+              <h1>Audífonos DJ's</h1>
+              <h2>€ 399,99 <span class="line-through">€ 450,00</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+        </div>
+        <div class="directions">
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="offer" >
+        <div class="offer-item">
+          <img src="src/img/offer/1.webp" alt="o1" id="img1">
+        </div>
+        <div class="offer-ad">
+          <div class="countdown">
+            <div class="countdown-item">
+              <h1 id="days"></h1>
+              <span>DÍAS</span>
+            </div>
+            <div class="countdown-item">
+              <h1 id="hours"></h1>
+              <span>HORAS</span>
+            </div>
+            <div class="countdown-item">
+              <h1 id="minutes"></h1>
+              <span>MINUTOS</span>
+            </div>
+            <div class="countdown-item">
+              <h1 id="seconds"></h1>
+              <span>SEGUNDOS</span>
+            </div>
+          </div>
+          <h1 class="offer-title">OFERTA ESPECIAL ESTA SEMANA</h1>
+          <h2 class="offer-subtitle">NUEVA COLECCIÓN HASTA 50% DE DESCUENTO</h2>
+          <button class="search-button offer-button"><a href="#">COMPRA AHORA</a></button>
+        </div>
+        <div class="offer-item">
+          <img src="src/img/offer/2.png" alt="o2">
+        </div>
+      </div>
+      <div class="new">
+        <div class="new-top">
+          <h1>MÁS VENDIDOS</h1>
+          <nav class=" nav-new">
+            <a href="#">Laptops</a>
+            <a href="#">Teléfonos inteligentes</a>
+            <a href="#">Cámaras</a>
+            <a href="#">Accesorios</a>
+          </nav>
+        </div>
+        <div class="products">
+          <div class="products-item">
+            <img src="src/img/best_sellers/1.webp" alt="p1" >
+            <div class="products-info">
+              <h3>Mouses</h3>
+              <h1>Mouse Óptico</h1>
+              <h2>€ 99,99 <span class="line-through">€ 150,00</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+          <div class="products-item">
+            <img src="src/img/best_sellers/2.png" alt="p2">
+            <div class="products-info">
+              <h3>Accesorios</h3>
+              <h1>ALFOMBRILLA GAMING MMPRGB</h1>
+              <h2>€ 20,00 <span class="line-through">€ 25,00</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+          <div class="products-item">
+            <img src="src/img/best_sellers/3.webp" alt="p3">
+            <div class="products-info">
+              <h3>TELÉFONOS inteligentes</h3>
+              <h1>OPPO A91 ( 8GB + 128GB )</h1>
+              <h2>€ 270,21 <span class="line-through">€ 329,00</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+          <div class="products-item">
+            <img src="src/img/best_sellers/4.png" alt="p4" class="transform-img">
+            <div class="products-info">
+              <h3>Teclados</h3>
+              <h1>Newskill Serike TKL</h1>
+              <h2>€ 40,50 <span class="line-through">€ 49,95</span></h2>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="actions">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-exchange-alt"></i>
+              <i class="far fa-eye"></i>
+            </div>
+          </div>
+        </div>
+        <div class="directions">
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="best-sellers">
+        <div class="best-sellers-col">
+          <div class="best-sellers-title">
+            <h1>Más VENDIDOS</h1>
+            <div class="directions">
+              <i class="fas fa-chevron-left"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="best-sellers-object">
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_1/1.png" alt="bs1">
+              </div>
+              <div class="best-sellers-info">
+                <h3>Mouses</h3>
+                <h1>Speed-Link SOVOS Vertical RGB Gaming Mouse</h1>
+                <h2>€ 39,99 <span class="line-through">€ 49,95</span></h2>
+              </div>
+            </div>
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_1/2.png" alt="bs2">
+              </div>
+              <div class="best-sellers-info">
+                <h3>Monitores</h3>
+                <h1>GAME M238E4K 24'' VA UHD 4K 60HZ</h1>
+                <h2>€ 199,99 <span class="line-through">€ 250,95</span></h2>
+              </div>
+            </div>
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_1/3.png" alt="bs3">
+              </div>
+              <div class="best-sellers-info">
+                <h3>tarjetas gráficas</h3>
+                <h1>AORUS GeForce GTX 1080 8G</h1>
+                <h2>€ 603,95 <span class="line-through">€ 650,00</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="best-sellers-col">
+          <div class="best-sellers-title">
+            <h1>Más VENDIDOS</h1>
+            <div class="directions">
+              <i class="fas fa-chevron-left"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="best-sellers-object">
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_2/1.png" alt="bs1">
+              </div>
+              <div class="best-sellers-info">
+                <h3>laptops</h3>
+                <h1>Asus ROG Strix SCAR II</h1>
+                <h2>€ 1.331,54 <span class="line-through">€ 2.504,95</span></h2>
+              </div>
+            </div>
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_2/2.png" alt="bs2">
+              </div>
+              <div class="best-sellers-info">
+                <h3>Periféricos</h3>
+                <h1>Gigabyte Aorus Liquid Cooler 360</h1>
+                <h2>€ 194,45 <span class="line-through">€ 235,28</span></h2>
+              </div>
+            </div>
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_2/3.png" alt="bs3">
+              </div>
+              <div class="best-sellers-info">
+                <h3>tarjetas gráficas</h3>
+                <h1>Gigabyte X570 AORUS XTREME</h1>
+                <h2>€ 603,95 <span class="line-through">€ 779,91</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="best-sellers-col">
+          <div class="best-sellers-title">
+            <h1>Más VENDIDOS</h1>
+            <div class="directions">
+              <i class="fas fa-chevron-left"></i>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="best-sellers-object">
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_3/1.png" alt="bs1">
+              </div>
+              <div class="best-sellers-info">
+                <h3>Fuentes de Poder</h3>
+                <h1>Aerocool KCAS 500W 80 Plus Bronze</h1>
+                <h2>€ 45,41 <span class="line-through">€ 54,95€</span></h2>
+              </div>
+            </div>
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_3/2.png" alt="bs2">
+              </div>
+              <div class="best-sellers-info">
+                <h3>Torres</h3>
+                <h1>PC Gamer Master Race PC</h1>
+                <h2>€ 1008,99 <span class="line-through">€ 1413,65</span></h2>
+              </div>
+            </div>
+            <div class="best-sellers-item">
+              <div class="best-sellers-img">
+                <img src="src/img/best_sellers/more_best_sellers/col_3/3.png" alt="bs3">
+              </div>
+              <div class="best-sellers-info">
+                <h3>consolas de videojuegos</h3>
+                <h1>Sony Play Station 5</h1>
+                <h2>€ 370,95 <span class="line-through">€ 499,00</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h1>Regístrese para el <span>boletín informativo</span></h1>
+        <div class="newsletter-back">
+          <i class="far fa-envelope" id="back-icon"></i>
+        </div>
+        <div class="news-subscribe">
+            <input type="email" name="subscribe" id="subscribe" placeholder="Introduce tu correo electrónico">
+            <button class="search-button offer-button subscribe-button"><a href="#"><i class="fas fa-envelope"></i> Suscribir</a></button>
+        </div>
+        <nav class="social-bar">
+          <a href="https://es-es.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.pinterest.es/"><i class="fab fa-pinterest"></i></a>
+        </nav>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-cont">
+        <h1>SOBRE NOSOTROS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quod aperiam ipsum dolor ullam accusantium!</p>
+        <div class="blocks">
+          <i class="fas fa-phone"></i>
+          <p>+34 999 99 99 99</p>
+        </div>
+        <div class="blocks">
+          <i class="far fa-envelope"></i>
+          <p>info@email.com</p>
+        </div>
+        <div class="blocks">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>38000 Santa Cruz de Tenerife</p>
+        </div>
+      </div>
+      <div class="footer-cont">
+        <h1>CATEGORÍAS</h1>
+        <p>Las mejores ofertas</p>
+        <p>Laptops</p>
+        <p>Teléfonos inteligentes</p>
+        <p>Cámaras</p>
+        <p>Accesorios</p>
+      </div>
+      <div class="footer-cont">
+        <h1>información</h1>
+        <p>Sobre nosotros</p>
+        <p>Contáctenos</p>
+        <p>Política de privacidad</p>
+        <p>Pedidos y devoluciones</p>
+        <p>Términos y condiciones</p>
+      </div>
+      <div class="footer-cont">
+        <h1>servicio</h1>
+        <p>Mi cuenta</p>
+        <p>Ver carrito</p>
+        <p>Lista de deseos</p>
+        <p>Seguimiento de mi pedido</p>
+        <p>Ayudar</p>
+      </div>
+    </footer>
+    <script src="src/js/countdown.js"></script>
+  </body>
+</html>
